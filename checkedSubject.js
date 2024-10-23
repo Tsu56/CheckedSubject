@@ -12,9 +12,9 @@ function checkedSubject() {
         const randomValue = getRandomInt(3, 5);
         console.log("Random Value:", randomValue);
                 // เลือก input ที่มีค่า value ตรงกับที่สุ่มได้
-        const randomChoice = div.querySelector(input[type="radio"][value="${randomValue}"]);
+        const randomChoice = div.querySelector(`input[type="radio"][value="${randomValue}"]`);
         console.log("Random Choice found:", randomChoice);
-        
+
         if (randomChoice) {
             randomChoice.checked = true;
             console.log("Checked:", randomChoice); // ติ๊กตัวเลือกที่สุ่มได้
