@@ -10,7 +10,7 @@ function checkedSubject() {
                 // สุ่มเลือก value ระหว่าง 3 ถึง 5
         const randomValue = getRandomInt(3, 5);
                 // เลือก input ที่มีค่า value ตรงกับที่สุ่มได้
-        const randomChoice = div.querySelector(input[type="radio"][value="${randomValue}"]);
+        const randomChoice = div.querySelector(`input[type="radio"][value="${randomValue}"]`);
         if (randomChoice) {
             randomChoice.checked = true; // ติ๊กตัวเลือกที่สุ่มได้
         }
