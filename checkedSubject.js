@@ -7,10 +7,15 @@ function checkedSubject() {
 
     for (let i = 0; i < divs.length; i++) {
         const div = divs[i];
-                // สุ่มเลือก value ระหว่าง 3 ถึง 5
+        // สุ่มเลือก value ระหว่าง 3 ถึง 5
+
+        for (let j = 1; j < 5; j++) {
+            var input = document.getElementById("choice${j}");
+        }
+        
         const randomValue = getRandomInt(3, 5);
-                // เลือก input ที่มีค่า value ตรงกับที่สุ่มได้
-        const randomChoice = div.querySelector('input[type="radio"][value="${randomValue}"]');
+        // เลือก input ที่มีค่า value ตรงกับที่สุ่มได้
+        const randomChoice = div.querySelector(input[type = "radio"][value = "${randomValue}"]);
 
         if (randomChoice) {
             randomChoice.checked = true; // ติ๊กตัวเลือกที่สุ่มได้
