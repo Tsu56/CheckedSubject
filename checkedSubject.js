@@ -11,14 +11,14 @@ function checkedSubject() {
 
         for (let j = 1; j < 5; j++) {
             var input = document.getElementById("choice${j}");
-        }
-        
-        const randomValue = getRandomInt(3, 5);
-        // เลือก input ที่มีค่า value ตรงกับที่สุ่มได้
-        const randomChoice = div.querySelector(input[type = "radio"][value = "${randomValue}"]);
 
-        if (randomChoice) {
-            randomChoice.checked = true; // ติ๊กตัวเลือกที่สุ่มได้
+            const randomValue = getRandomInt(3, 5);
+            // เลือก input ที่มีค่า value ตรงกับที่สุ่มได้
+            const randomChoice = div.querySelector(input[type = "radio"][value = "${randomValue}"]);
+    
+            if (randomChoice) {
+                randomChoice.checked = true; // ติ๊กตัวเลือกที่สุ่มได้
+            }
         }
     }
 }
